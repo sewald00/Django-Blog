@@ -1,5 +1,6 @@
 {% load static %}
 <html>
+    <div class="wrapper"></div>
     <head>
         <title>Seth Ewald</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -13,18 +14,20 @@
 
 
     <div class="page-header">
-        {% if user.is_authenticated %}
+        {% if user.is_staff %}
             <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-pencil"></span></a>
         {% endif %}
         <h1><a href="/">Seth Ewald</a></h1>
+        <h5 align="right">Logged in as: {{ user.username }}</h5>
     </div>
 
 
     <ul class="topnav">
-        <li><a href="#home">Home</a></li>
+        <li><a href="http://127.0.0.1:8000">Home</a></li>
         <li><a href="#about">About Me</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li class="right"><a href="#signup">Sign Up</a></li>
+        <li class="right"><a href="http://127.0.0.1:8000/signup/">Sign Up</a></li>
+        <li class="right"><a href="http://127.0.0.1:8000/signin/">Sign in</a></li>
     </ul>
 
     <div class="content container">
