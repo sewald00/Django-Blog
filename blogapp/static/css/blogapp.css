@@ -18,12 +18,16 @@ html {
     margin-top: 0;
     padding: 20px 20px 20px 40px;
     font-family: Bookman;
-    border: 5px solid black;
-    background-image: url(https://static1.squarespace.com/static/5693e54569a91ab895a2c830/t/569522839cadb633316c54ed/1452614277423/0e3863867_1416877594_wooden-header.jpg?format=1500w);
+    border: 5px rounded black;
+    background-color:#000000;
+    align: center;
+
+
+
 
 }
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #ffffff;
+    color: #000000;
     font-size: 50pt;
     text-decoration: none;
     text-shadow: 2px 2px #000000;
@@ -44,6 +48,7 @@ h5 {
     color: #ffffff;
     text-shadow: 2px 2px #000000;
     font-size:12pt;
+
 
 }
 
@@ -88,7 +93,7 @@ ul.topnav {
   padding: 0;
   overflow: hidden;
   border: 5px solid black;
-  background-image: url("https://stagecoachcoffee.com/wp-content/uploads/2014/05/header.table_.wood_.jpg")
+  background-color: black;
 }
 
 ul.topnav li {float: left;}
@@ -102,6 +107,7 @@ ul.topnav li a {
   text-shadow: 2px 2px #000000;
   font-family: Comic Sans MS Header
   border: 5px solid black;
+  background-color: black;
 }
 
 ul.topnav li a:hover:not(.active) {background-color: #111;}

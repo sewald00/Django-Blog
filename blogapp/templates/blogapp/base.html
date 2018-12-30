@@ -17,17 +17,17 @@
         {% if user.is_staff %}
             <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-pencil"></span></a>
         {% endif %}
-        <h1><a href="/">Seth Ewald</a></h1>
+         <img class="center" src="{% static "seth.png" %}" alt="Seth Ewald: Web Development Blog">
         <h5 align="right">Logged in as: {{ user.username }}</h5>
     </div>
 
 
     <ul class="topnav">
-        <li><a href="http://127.0.0.1:8000">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li class="right"><a href="http://127.0.0.1:8000/signup/">Sign Up</a></li>
-        <li class="right"><a href="http://127.0.0.1:8000/signin/">Sign in</a></li>
+        <li><a href="http://127.0.0.1:8000"><img src="{% static "home.png" %}"></a></li>
+        <li><a href="#about"><img src="{% static "about.png" %}"></a></li>
+        <li><a href="#contact"><img src="{% static "contact.png" %}"></a></li>
+        <li class="right"><a href="http://127.0.0.1:8000/signup/"><img src="{% static "signup.png" %}"></a></li>
+        <li class="right"><a href="http://127.0.0.1:8000/signin/"><img src="{% static "signin.png" %}"></a></li>
     </ul>
 
     <div class="content container">
